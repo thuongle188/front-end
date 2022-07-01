@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký kham</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i|Noto+Sans:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">    
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            Dịch vụ khám răng hàm mặt
+        </div>
+        <div class="to">
+            <form class="form" onsubmit="return false">
+                <h2>Đăng ký khám</h2>
+                <label style="margin-left: -150px;">Họ và tên</label>
+                <input required id = "inname" type="text" name="hoten">
+                <label>Số điện thoại</label>
+                <input required id="inphone" type="text" name="sdt">    
+                <label style="margin-left: -130px;">Bác sĩ khám</label>
+                <input required id ="indoctor" type="text" name="bacsi"> 
+                <label style="margin-left: -110px;">Thời gian khám</label>
+                <input required id="intime" type="text" name="time"> 
+                <input id="submit" class="js-submit" type="submit" name="submit" value="Gửi">
+            </form>                
+        </div>
+
+        <div id="noti" class="noti">
+            <form class="form-noti" onsubmit="return false">
+                <h2>Đăng kí thành công</h2>
+                <label style="margin-left: -150px;">Họ và tên</label>
+                <label for="" class="name-noti" id="name-noti"></label>
+                <label>Số điện thoại</label>
+                <label for="" id="phone-noti" class="phone-noti"></label>
+                <label style="margin-left: -130px;">Bác sĩ khám</label>
+                <labe class="doctor-noti" id="doctor-noti"></labe> 
+                <label style="margin-left: -110px;">Thời gian khám</label>
+                <label for="" class="time-noti" id="time-noti"></label>
+                <div id="btnok" class="btnok">OK</div>
+            </form>                
+        </div>
+
+        <div id="doctor-list">
+            <h2>Danh sách bác sĩ</h2>
+            <ol id="doctor-block" class="doctors-num"></ol>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

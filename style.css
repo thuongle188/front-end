@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    overflow: hidden;
+    background-color: #ededed;
+}
+.to {
+    position: relative;
+    top: 50px;
+    left: 20%;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: minmax(100px,auto);
+}
+ 
+.form {
+    border: 1px solid #80808000;
+    grid-column: 6/9;
+    grid-row: 3;
+    height: 470px;
+    width: 292px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 0px 14px 0px grey;
+    background-color: white;
+}
+h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+i.fab.fa-app-store-ios {
+    display: block;
+    margin-bottom: 50px;
+    font-size: 28px;
+}
+ 
+label {
+    margin-left: -126px;
+    display: block;
+    font-weight: lighter;
+ 
+}
+input{
+    display: block;
+    border-bottom: 2px solid #141414;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    outline-style: none;
+}
+input[type="text"] {
+    padding: 5px;
+    width: 70%;
+}
+ 
+input#submit {
+    padding: 7px;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+    background: linear-gradient(to right, #fc00ff, #00dbde);
+}
+input#submit:hover{
+ 
+    background: linear-gradient(to right, #fc466b, #3f5efb); 
+}
+
+.header{
+    background-color: rgba(3, 85, 50, 0.9);
+    height: 15%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+#main{
+    position: relative;
+    background-color: rgb(213, 221, 228);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    min-height: 800px;
+}
+
+.clear{
+    clear: both;
+}
+
+#doctor-list> h2{
+    text-align: center;
+}
+
+#doctor-list h2{
+    margin: 0;
+}
+
+#doctor-list{
+    position: absolute;
+    top: 14%;
+    right: 20%;
+    border: 2px black solid;
+    min-width: 20%;
+    padding: 15px;
+}
+
+.doctors-num{
+    padding: 20px;
+}
+
+li{
+    border-bottom: 1px black solid;
+}
+
+.noti{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 6%;
+    padding: 10% 0 0 35%;
+    background-color: rgba(89, 93, 91, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.form-noti {
+    padding: 0 50px;
+    border: 1px solid #80808000;
+    grid-column: 6/9;
+    grid-row: 3;
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 0px 14px 0px grey;
+    background-color: white;
+}
+
+.name-noti{
+    height: 20px;
+    width: 85%;
+    border-bottom: 1px black solid;
+    margin: 0 100px 10px 100px;
+    padding: 0 -50px;
+}
+.phone-noti{
+    height: 20px;
+    width: 85%;
+    border-bottom: 1px black solid;
+    margin: 0 100px 10px 100px;
+    padding: 0 -50px;
+}
+.doctor-noti{
+    height: 20px;
+    width: 85%;
+    border-bottom: 1px black solid;
+    margin: 0 100px 10px 100px;
+    padding: 0 -50px;
+}
+.time-noti{
+    height: 20px;
+    width: 85%;
+    border-bottom: 1px black solid;
+    margin: 0 100px 10px 100px;
+    padding: 0 -50px;
+}
+
+.open-noti{
+    display: block;
+}
+
+.btnok{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00dbde;
+    border-radius: 5px;
+}
+
+.btnok:hover{
+    background-color: burlywood;
+    color: #000;
+    cursor: pointer;
+}
